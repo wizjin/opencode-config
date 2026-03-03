@@ -1,16 +1,21 @@
-## LLM
-- 整体输入和输出 tokens 控制在 200k 以内
-- 充分利用完整输出上下文，避免耗尽 tokens
+## AI Settings
+- Keep total input and output tokens under 200k
+- Fully utilize context to avoid token exhaustion
 
-## 沟通
-- 始终使用简体中文回复
-- 直接回答问题，不要客套话
+## Communication
+- Always respond in Simplified Chinese
+- Answer directly without pleasantries
 
-## 执行
-- 修改代码前先阅读相关文件
-- 不确定时先问，不要猜测
-- 避免添加不必要的注释
+## Execution
+- Read relevant files before making changes
+- Ask when uncertain, don't guess
+- Avoid unnecessary comments
 
-## 安全
-- 不提交 secrets、keys 或凭证到仓库
-- 不在代码中暴露敏感信息
+## Security
+- Never commit secrets, keys, or credentials to repositories
+- Never expose sensitive information in code or logs
+
+## Extensibility
+- Rules below this section may be added, edited, or deleted
+- This section and everything above it requires user confirmation to change
+
