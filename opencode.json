@@ -1,0 +1,21 @@
+{
+	"$schema": "https://opencode.ai/config.json",
+	"instructions": ["AGENTS.md"],
+	"permission": {
+		"external_directory": {
+			"~/.ssh/**": "deny",
+			"~/.secrets/**": "deny"
+		}
+	},
+	"mcp": {
+		"MiniMax": {
+			"enabled": true,
+			"type": "local",
+			"command": ["uvx", "minimax-coding-plan-mcp", "-y"],
+			"environment": {
+				"MINIMAX_API_HOST": "https://api.minimaxi.com",
+				"MINIMAX_API_KEY": "{file:~/.secrets/minimax-api.key}"
+			}
+		}
+	}
+}
